@@ -9,4 +9,18 @@ std::string encrypt(std::string text, int shift){
         if(isupper(text[i])){
             result += char(int(text[i] + shift - 65)%26 +  65);
         }
+        else{
+            result += char(int(text[i] + shift - 65)%26 + 65);
+        }
+        return result;
+}
+
+int main(){
+    std::string text;
+    std::cout << "Enter text: ";
+    std::cin >> text;
+    std::cout << std::endl;
+    std::cout << "Your text is: " << text << std::endl;
+    std::cout << "Your shift is: " << shift << std::endl;
+    std::cout << "Encrypted text is: " << encrypt(text, shift) << std::endl;
 }
