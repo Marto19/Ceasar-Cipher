@@ -13,9 +13,11 @@ std::string encrypt(std::string text, int shift){
             result += char(int(text[i] + shift - 65)%26 + 65);
         }
         return result;
+    }
 }
 
 int main(){
+    int shift;
     std::string text;
     std::cout << "Enter text: ";
     std::cin >> text;
