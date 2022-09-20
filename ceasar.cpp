@@ -22,6 +22,8 @@ int main(){
     std::cout << "Enter text: ";
     std::cin >> text;
     std::cout << std::endl;
+    std::cout << "Enter shift: ";
+    std::cin >> shift;
     std::cout << "Your text is: " << text << std::endl;
     std::cout << "Your shift is: " << shift << std::endl;
     std::cout << "Encrypted text is: " << encrypt(text, shift) << std::endl;
