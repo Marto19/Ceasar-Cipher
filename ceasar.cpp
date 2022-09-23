@@ -10,7 +10,7 @@ std::string encrypt(std::string text, int shift){
             result += char(int(text[i] + shift - 65)%26 + 65);
         }
         else{
-            result += char(int(text[i] + shift - 65)%26 + 65);
+            result += char(int(text[i] + shift - 97)%26 + 97);
         }
     }
     return result;
