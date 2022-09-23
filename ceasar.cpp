@@ -12,8 +12,8 @@ std::string encrypt(std::string text, int shift){
         else{
             result += char(int(text[i] + shift - 65)%26 + 65);
         }
-        return result;
     }
+    return result;
 }
 
 int main()
